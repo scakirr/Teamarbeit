@@ -1,0 +1,45 @@
+package teamACS;
+
+/**
+ * @author Batu
+ *
+ */
+public class Klasse1 {
+	/**
+	 * Methode zum Berechnen der Flaeche eines Rechtecks
+	 * 
+	 * @param laenge
+	 * @param breite
+	 * @return die berechnete Flaeche
+	 */
+	public double berechneRechteck(double laenge, double breite) {
+		double flaeche = laenge * breite;
+		return flaeche;
+	}
+
+	/**
+	 * Methode zum Berechnen der Flaeche eines Kreises
+	 * 
+	 * @param radius
+	 * @return die berechnete Flaeche
+	 */
+	public double berechneKreis(double radius) {
+		double pi = Math.PI;
+		double flaeche = pi * (radius * radius);
+		return flaeche;
+	}
+
+	/**
+	 * Methode zum Berechnen der Flaeche eines Dreiecks
+	 * 
+	 * @param seiteA
+	 * @param seiteB
+	 * @param seiteC
+	 * @return die berechnete Flaeche
+	 */
+	public double berechneDreieck(double seiteA, double seiteB, double seiteC) {
+		double s = (seiteA + seiteB + seiteC) / 2;
+		double flaeche = Math.sqrt(s * (s - seiteA) * (s - seiteB) * (s - seiteC));
+		return flaeche;
+	}
+}
