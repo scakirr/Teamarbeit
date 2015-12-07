@@ -3,6 +3,9 @@
 # Teammitglieder: 
 Akdin, Cakir, Salihi
 
-Klasse 1: Akdin
-Klasse 2: Salihi
-Klasse 3: Cakir
+# Klasse 1: 
+Akdin
+# Klasse 2:
+Salihi
+# Klasse 3:
+Cakir
