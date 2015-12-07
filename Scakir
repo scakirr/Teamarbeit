@@ -1,0 +1,88 @@
+package teamACS;
+public class Klasse3<E extends java.util.Collection<Double»{
+ 
+	E value;
+ //Der Konstruktor der Klasse3.
+ public Klasse3(E data){
+  this.value = value;
+ }
+ //ADDED einen Wert in den Value Wert
+ public void add(double d) {
+	 value.add(d);
+	 }
+ 
+ public void add(java.lang.Iterable<Double> value) {
+	 add(value.iterator());
+	 }
+ 
+ public void add(java.util.Iterator<Double> i) {
+	 while(i.hasNext()) value.add(i.next());
+	 }
+ //Added beliebig viele d
+ public void add(double ... d) {
+	 add(toDoubleArrayIterator(d));
+ }
+ 
+ public double summe() {
+	 return summe(value);
+ }
+ 
+ public static double summe(java.lang.Iterable<Double> argumente) throws java.lang.IllegalArgumentException{
+  return summe(argumente.iterator());
+ }
+ 
+ public static double summe(java.util.Iterator<Double> i) throws java.lang.IllegalArgumentException{
+  if(!i.hasNext())
+   throw new IllegalArgumentException("Der Iterator hat keinen Zugriff auf Elemente!");
+  double summe = i.next();
+  while(i.hasNext())
+   summe += i.next();
+  return summe;
+ }
+ 
+
+ 
+ public double minimum() {
+	 return minimum(value);
+ }
+
+ public static double minimum(java.lang.Iterable<Double> argumente) throws java.lang.IllegalArgumentException
+  {return minimum(argumente.iterator());}
+ 
+ public static double minimum(java.util.Iterator<Double> i) throws java.lang.IllegalArgumentException{
+  if(!i.hasNext())
+   throw new IllegalArgumentException("Der Iterator hat keinen Zugriff auf Elemente!");
+  double minimum = i.next();
+  while(i.hasNext())
+   Math.min(minimum, i.next());
+  return minimum;
+ }
+
+
+
+ public double maximum() {
+	 return maximum(value);
+ }
+
+ public static double maximum(java.lang.Iterable<Double> argumente) throws java.lang.IllegalArgumentException{
+	 return maximum(argumente.iterator());
+  }
+ 
+ public static double maximum(java.util.Iterator<Double> i) throws java.lang.IllegalArgumentException{
+  if(!i.hasNext())
+   throw new IllegalArgumentException("Der Iterator hat keinen Zugriff auf Elemente!");
+  double maximum = i.next();
+  while(i.hasNext())
+   Math.min(maximum, i.next());
+  return maximum;
+ }
+
+ 
+ public static ArrayIterator<Double> toDoubleArrayIterator(double[] d){
+  Double[] temp = new Double[d.length];
+  for(int i = 0; i < d.length; ++i)
+   temp[i] = d[i];
+  return new ArrayIterator<Double>(temp);
+ }
+ 
+}
