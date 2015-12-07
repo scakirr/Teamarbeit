@@ -1,2 +1,5 @@
 # Teamarbeit
-Rafeiner Projekt01
+Rafeiner Teamarbeit 1
+
+# Teammitglieder: 
+Akdin, Cakir, Salihi
