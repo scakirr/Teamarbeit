@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+package teamACS;
+
+/**
+ * @author esalihi bakdin scakir
+ *
+ */
+public class Testklasse { 
+	public static void main (String []args){ 
+		System.out.println("Flaechemberechnung");
+		 	
+		Klasse1 k1 = new Klasse1();
+		System.out.println(k1.berechneRechteck(1,2));
+		System.out.println(k1.berechneKreis(2));
+		System.out.println(k1.berechneDreieck(2,2,3));
+	}
+
+		Klasse2 k1 = new Klasse2(1,2,3,0); 
+ 			System.out.println(k1.getInhalt()); 
+	
+		Klasse2 k2 = new Klasse2(1,2,3,1); 
+ 			System.out.println(k2.getInhalt()); 
+		 
+		Klasse2 k3 = new Klasse2(1,2,3,2); 
+			System.out.println(k3.getInhalt()); 
+			
+			Maximum m1 = new Maximum(1,2,3,4,5); 
+				System.out.println(m1.getSum()); 
+				System.out.println(m1.getMax()); 
+		 			System.out.println(m1.getMin()); 
+	 			 
+
+
+	}
+}
+
