@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package teamACS;
+
+/**
+ * @author Batu
+ *
+ */
+public class Testklasse {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/**
+		 * Testklasse der 1.Klasse(Akdin)
+		 */
+		Klasse1 k1 = new Klasse1();
+		System.out.println(k1.berechneRechteck(1,2));
+		System.out.println(k1.berechneKreis(2));
+		System.out.println(k1.berechneDreieck(2,2,3));
+	}
+
+}
